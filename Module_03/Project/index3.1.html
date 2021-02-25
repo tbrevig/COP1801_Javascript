@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+    var name = $('#name').val();
+    $("#display").text(name);
+    $("#display").css({"color": "red", "font-size": "200%"});
+});
+});
+</script>
+</head>
+<body>
+Enter a string here
+<input type="text" id="name">
+<p>Click "Display My Entry!" </p>
+<button>Display My Entry</button>
+<p id="display"></p>
+</body>
+</html>
