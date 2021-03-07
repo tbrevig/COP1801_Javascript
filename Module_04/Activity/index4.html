@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Module 04 Activity - Writing Conditional Statements</title>
+</head>
+<body>
+    <script>
+
+    var x = parseInt(prompt("Enter first number")),
+      y = parseInt(prompt("Enter second number")),
+      z = parseInt(prompt("Enter thrid number"));
+
+  if (x < y && x < z) {
+      document.write(x);
+      if (y < z) {
+          document.write(y);
+          document.write(z);
+      } else {
+          document.write(z);
+          document.write(y);
+      }
+  } else if (y < z && y < x) {
+      document.write(y);
+      if (z < x) {
+          document.write(z);
+          document.write(x);
+      } else {
+          document.write(x);
+          document.write(z);
+      }
+  } else {
+      document.write(z);
+      if (x < y) {
+          document.write(x);
+          document.write(y);
+      } else {
+          document.write(y);
+          document.write(x);
+      }
+  }
+    </script>
+</body>
+</html>
