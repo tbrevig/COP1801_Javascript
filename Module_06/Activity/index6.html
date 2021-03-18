@@ -1,0 +1,28 @@
+<html>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+<head>
+<script>
+function f1()
+{
+dqm1=document.form1.length.value;
+dqm1=parseInt(dqm1);
+y=document.form1.width.value;
+y=parseInt(y);
+area=dqm1*y;
+
+alert("Area is "+area);
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<center> Enter length <input type="text" name="length" />
+</br>
+Enter width<input type="text" name="width" />
+<input type="submit" value="Submit" onclick="f1()">
+</form>
+</body>
+</html>
